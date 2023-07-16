@@ -3,9 +3,8 @@
     <el-container>
         <el-aside width="200px">Aside</el-aside>
         <el-container>
-            <el-header>
+           
                 <CommonHeader></CommonHeader>
-            </el-header>
             <el-main>
                 <router-view></router-view>
             </el-main>
