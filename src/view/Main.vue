@@ -4,7 +4,7 @@
         <CommonAside></CommonAside>
         <el-container>
            
-                <CommonHeader></CommonHeader>
+            <CommonHeader></CommonHeader>
             <el-main>
                 <router-view></router-view>
             </el-main>
@@ -22,3 +22,22 @@ export default defineComponent({
     components:{CommonHeader,CommonAside} ,
 }) 	
 </script>
+
+<style lang="less" scoped>
+.el-container{
+    flex-wrap: wrap;
+    // align-items: flex-start;
+    align-content: baseline;
+}
+.common-layout{
+    height: 100%;
+    .el-container{
+        height: 100%;
+        .el-aside{
+            height: 100%;
+            background: #545c64;
+        }
+
+    }
+}
+</style>

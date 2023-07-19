@@ -6,6 +6,7 @@
                 <Menu />
             </el-icon>
         </el-button>
+        <h3>首页</h3>
     </div>
     <div class="r-content">
         <el-dropdown>
@@ -42,7 +43,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // width: 100%;
+    width: 100%;
+    background: #333;
 }
 
 .r-content {
@@ -51,6 +53,16 @@ header {
         height: 40px;
         border-radius: 50%;
 
+    }
+}
+.l-content {
+    display: flex;
+    align-items: center;
+    .el-button{
+        margin-right: 20px;
+    }
+    h3{
+        color: #fff;
     }
 }
 </style>

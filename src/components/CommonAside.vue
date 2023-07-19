@@ -74,3 +74,13 @@ export default {
     }
 }
 </script>
+
+<style lang="less" scoped>
+.icons{
+    width: 18px;
+    height: 18px;;
+}
+.el-menu{
+    border: none;
+}
+</style>
