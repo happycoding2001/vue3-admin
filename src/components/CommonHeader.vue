@@ -1,7 +1,7 @@
 <template>
 <el-header>
     <div class="l-content">
-        <el-button size="small">
+        <el-button size="small" @click="handleCollapse()" >
             <el-icon :size="20">
                 <Menu />
             </el-icon>
@@ -25,14 +25,21 @@
 </template>
 
 <script>
+import {useStore} from 'vuex'
 export default{
     setup(){
+        let store = useStore()
+
         // let src = require('../assets/images/user.png')
         const getImgSrc = ()=>{
             return new URL('../assets/images/user.png',import.meta.url).href
         }
+        let handleCollapse = ()=>{
+            store.commit('updateIsCollapse')
+        }
         return {
-            getImgSrc
+            getImgSrc,
+            handleCollapse,
         }
     }
 }

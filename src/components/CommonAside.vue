@@ -1,6 +1,6 @@
 <template>
-<el-aside width="200px">
-    <el-menu class="el-menu-vertical-demo" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b" :collapse="false">
+<el-aside :width="$store.state.isCollapse?'180px':'64px'">
+    <el-menu class="el-menu-vertical-demo" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b" :collapse="!$store.state.isCollapse" :collapse-transition="false">
         <el-menu-item :index="item.path" v-for="item in noChildren()" :key="item.path" >
             <el-icon>
                 <component class="icons" :is="item.icon"></component>
